@@ -2,7 +2,7 @@
 
 Premake是一个命令行实用程序，它读取软件项目的脚本定义，并且最常见的是，使用它来为Visual Studio，Xcode或GNU Make等工具集生成项目文件。
 
-```
+```lua
 workspace "MyWorkspace"
    configurations { "Debug", "Release" }
 

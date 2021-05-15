@@ -1,0 +1,904 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>覆盖和调用数组 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="developing-modules.html" />
+    
+    
+    <link rel="prev" href="coding-conventions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../getting-started/home.html">
+            
+                <a href="../getting-started/home.html">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../getting-started/what-is-premake.html">
+            
+                <a href="../getting-started/what-is-premake.html">
+            
+                    
+                    什么是premake?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../getting-started/using-premake.html">
+            
+                <a href="../getting-started/using-premake.html">
+            
+                    
+                    使用premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../getting-started/building-premake.html">
+            
+                <a href="../getting-started/building-premake.html">
+            
+                    
+                    构建premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    编写premake脚本
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../writing-premake-scripts/your-first-script.html">
+            
+                <a href="../writing-premake-scripts/your-first-script.html">
+            
+                    
+                    你的第一个脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../writing-premake-scripts/workspaces-and-projects.html">
+            
+                <a href="../writing-premake-scripts/workspaces-and-projects.html">
+            
+                    
+                    工作区和项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../writing-premake-scripts/scopes-and-inheritance.html">
+            
+                <a href="../writing-premake-scripts/scopes-and-inheritance.html">
+            
+                    
+                    范围和继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../writing-premake-scripts/adding-source-files.html">
+            
+                <a href="../writing-premake-scripts/adding-source-files.html">
+            
+                    
+                    添加源文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../writing-premake-scripts/linking.html">
+            
+                <a href="../writing-premake-scripts/linking.html">
+            
+                    
+                    链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../writing-premake-scripts/configurations-and-platforms.html">
+            
+                <a href="../writing-premake-scripts/configurations-and-platforms.html">
+            
+                    
+                    配置和平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../writing-premake-scripts/filters.html">
+            
+                <a href="../writing-premake-scripts/filters.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../writing-premake-scripts/build-settings.html">
+            
+                <a href="../writing-premake-scripts/build-settings.html">
+            
+                    
+                    构建设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../writing-premake-scripts/command-line-arguments.html">
+            
+                <a href="../writing-premake-scripts/command-line-arguments.html">
+            
+                    
+                    命令行参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../writing-premake-scripts/using-modules.html">
+            
+                <a href="../writing-premake-scripts/using-modules.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../writing-premake-scripts/more-authoring-topics.html">
+            
+                <a href="../writing-premake-scripts/more-authoring-topics.html">
+            
+                    
+                    更多创作主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    扩展premake
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="extending-premake.html">
+            
+                <a href="extending-premake.html">
+            
+                    
+                    扩展premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="code-overview.html">
+            
+                <a href="code-overview.html">
+            
+                    
+                    代码概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="coding-conventions.html">
+            
+                <a href="coding-conventions.html">
+            
+                    
+                    编码约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="overrides-and-call-arrays.html">
+            
+                <a href="overrides-and-call-arrays.html">
+            
+                    
+                    覆盖和调用数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="developing-modules.html">
+            
+                <a href="developing-modules.html">
+            
+                    
+                    开发模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="adding-a-new-action.html">
+            
+                <a href="adding-a-new-action.html">
+            
+                    
+                    添加新action
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../guides/sharing-configuration-settings.html">
+            
+                <a href="../guides/sharing-configuration-settings.html">
+            
+                    
+                    共享配置设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    参考
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    项目设置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../reference/project-settings/architecture.html">
+            
+                <a href="../reference/project-settings/architecture.html">
+            
+                    
+                    architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../reference/project-settings/atl.html">
+            
+                <a href="../reference/project-settings/atl.html">
+            
+                    
+                    atl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../reference/project-settings/basedir.html">
+            
+                <a href="../reference/project-settings/basedir.html">
+            
+                    
+                    basedir
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    全局
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    http
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    io
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    json
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" >
+            
+                <span>
+            
+                    
+                    os
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" >
+            
+                <span>
+            
+                    
+                    path
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" >
+            
+                <span>
+            
+                    
+                    string
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" >
+            
+                <span>
+            
+                    
+                    table
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" >
+            
+                <span>
+            
+                    
+                    term
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" >
+            
+                <span>
+            
+                    
+                    zip
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >覆盖和调用数组</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x8986;&#x76D6;&#x548C;&#x8C03;&#x7528;&#x6570;&#x7EC4;">&#x8986;&#x76D6;&#x548C;&#x8C03;&#x7528;&#x6570;&#x7EC4;</h2>
+<p>Premake&#x7684;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x56F4;&#x7ED5;&#x4E24;&#x79CD;&#x7F16;&#x7801;&#x7EA6;&#x5B9A;&#x6784;&#x5EFA;&#xFF1A;&#x8986;&#x76D6;&#xFF08;&#x4E00;&#x79CD;&#x5C06;&#x51FD;&#x6570;&#x66FF;&#x6362;&#x4E3A;&#x53E6;&#x4E00;&#x79CD;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x5316;&#x65B9;&#x6CD5;&#xFF09;&#x548C;&#x8C03;&#x7528;&#x6570;&#x7EC4;&#xFF08;&#x4E00;&#x79CD;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x5BF9;&#x4E00;&#x7CFB;&#x5217;&#x6B65;&#x9AA4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x7684;&#x65B9;&#x6CD5;&#xFF09;&#x3002;</p>
+<h3 id="&#x60A8;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x81EA;&#x5B9A;&#x4E49;">&#x60A8;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x81EA;&#x5B9A;&#x4E49;</h3>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x770B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x3002; &#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x8BA1;&#x5212;&#x5C06;Premake&#x751F;&#x6210;&#x7684;Visual Studio&#x9879;&#x76EE;&#x4FDD;&#x7559;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#xFF0C;&#x4EE5;&#x4F9B;&#x5386;&#x53F2;&#x53C2;&#x8003;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x77E5;&#x9053;&#x4F7F;&#x7528;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x7684;Premake&#x751F;&#x6210;&#x5B83;&#x4EEC;&#x3002; &#x4E3A;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x5728;&#x751F;&#x6210;&#x7684;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x7684;&#x9876;&#x90E8;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;XML&#x6CE8;&#x91CA;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-comment">&lt;!-- Generated by Premake 5.0.0-alpha3 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">Project</span> <span class="hljs-attr">DefaultTargets</span>=<span class="hljs-string">&quot;Build&quot;</span> <span class="hljs-attr">ToolsVersion</span>=<span class="hljs-string">&quot;4.0&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ItemGroup</span> <span class="hljs-attr">Label</span>=<span class="hljs-string">&quot;ProjectConfigurations&quot;</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- ... and so on... --&gt;</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x4E0D;&#x60F3;&#x4FEE;&#x6539;Premake&#x81EA;&#x5DF1;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x7684;&#x66F4;&#x6539;&#x5C06;&#x88AB;&#x6BCF;&#x4E2A;&#x65B0;&#x66F4;&#x65B0;&#x8986;&#x76D6;&#xFF0C;&#x5E76;&#x4E14;&#x6211;&#x4EEC;&#x5C06;&#x4E0D;&#x5F97;&#x4E0D;&#x7EF4;&#x62A4;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x5206;&#x652F;&#x3002;&#x8FD9;&#x4E5F;&#x610F;&#x5473;&#x7740;&#x751F;&#x6210;&#x6211;&#x4EEC;&#x9879;&#x76EE;&#x7684;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x9700;&#x8981;&#x5177;&#x6709;&#x5B9A;&#x5236;&#x7248;&#x672C;&#x7684;Premake&#xFF0C;&#x5426;&#x5219;&#xFF0C;&#x6211;&#x4EEC;&#x6700;&#x7EC8;&#x5C06;&#x83B7;&#x5F97;&#x4E0D;&#x5305;&#x542B;&#x7248;&#x672C;&#x6CE8;&#x91CA;&#x7684;&#x751F;&#x6210;&#x9879;&#x76EE;&#x3002;</p>
+<p>&#x76F8;&#x53CD;&#xFF0C;&#x6211;&#x4EEC;&#x771F;&#x7684;&#x5F88;&#x60F3;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x811A;&#x672C;&#x4E2D;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD;&#x81EA;&#x5B9A;&#x4E49;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E0E;&#x4EFB;&#x4F55;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5171;&#x4EAB;&#x811A;&#x672C;&#xFF0C;&#x7136;&#x540E;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x7248;&#x672C;&#x6CE8;&#x91CA;&#x7684;&#x65B0;&#x9879;&#x76EE;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x6E90;&#x4EE3;&#x7801;&#xFF01;">&#x4F7F;&#x7528;&#x6E90;&#x4EE3;&#x7801;&#xFF01;</h3>
+<p>&#x5728;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x9700;&#x8981;&#x77E5;&#x9053;Premake&#x6E90;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x54EA;&#x4E2A;&#x51FD;&#x6570;&#x6B63;&#x5728;&#x53D1;&#x51FA;&#x6B64;&#x7279;&#x5B9A;&#x6807;&#x8BB0;&#x3002;&#x5982;&#x4EE3;&#x7801;&#x6982;&#x8FF0;&#x4E2D;&#x6240;&#x8FF0;&#xFF0C;Visual Studio&#x5BFC;&#x51FA;&#x5668;&#x5F53;&#x524D;&#x4F4D;&#x4E8E;Premake&#x6E90;&#x4EE3;&#x7801;&#x6811;&#x7684;src / actions / vstudio&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF08;&#x7EE7;&#x7EED;&#x67E5;&#x627E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7B49;&#x5F85;&#xFF01;&#xFF09;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x5BFB;&#x627E;&#x751F;&#x6210;.vcxproj&#x6587;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6D4F;&#x89C8;&#x6587;&#x4EF6;&#x540D;&#x4F1A;&#x5C06;&#x6211;&#x4EEC;&#x5E26;&#x5230;vs2010_vcxproj.lua&#x3002;&#x6253;&#x5F00;&#x6B64;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x5728;m.project&#xFF08;&#xFF09;&#x51FD;&#x6570;&#x4E2D;&#x627E;&#x5230;&#x7684;&#x201C; &lt;Project&#x201D;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;</p>
+<pre><code>function m.project(prj)
+        local action = premake.action.current()
+        p.push(&apos;&lt;Project DefaultTargets=&quot;Build&quot; ToolsVersion=&quot;%s&quot; xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;&gt;&apos;,
+            action.vstudio.toolsVersion)
+    end
+</code></pre><p>&#xFF08;&#x6216;&#x8005;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x652F;&#x6301;&#x5B83;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x66F4;&#x5FEB;&#x5730;&#x5728;Premake&#x6765;&#x6E90;&#x4E2D;&#x5BF9;&#x8981;&#x8986;&#x76D6;&#x7684;&#x6807;&#x8BB0;&#x8FDB;&#x884C;&#x5168;&#x6587;&#x641C;&#x7D22;&#x3002;&#xFF09;</p>
+<p>&#x76EE;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x771F;&#x7684;&#x4E0D;&#x9700;&#x8981;&#x592A;&#x62C5;&#x5FC3;&#x6B64;&#x4EE3;&#x7801;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x6839;&#x672C;&#x5C31;&#x4E0D;&#x4F1A;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x3002; &#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;&#x65B0;&#x51FD;&#x6570;&#x8986;&#x76D6;&#x5B83;&#xFF0C;&#x8BE5;&#x65B0;&#x51FD;&#x6570;&#x8F93;&#x51FA;&#x6211;&#x4EEC;&#x7684;&#x7248;&#x672C;&#x6CE8;&#x91CA;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;&#x539F;&#x59CB;&#x51FD;&#x6570;&#x4EE5;&#x8F93;&#x51FA;&#x672A;&#x7ECF;&#x4FEE;&#x6539;&#x7684;Project&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x66F4;&#x591A;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&#x4EC0;&#x4E48;&#x662F;m&#xFF1F; &#x6309;&#x7167;&#x60EF;&#x4F8B;&#xFF0C;m&#x662F;&#x6211;&#x4EEC;&#x5728;&#x6587;&#x4EF6;&#x9876;&#x90E8;&#x58F0;&#x660E;&#x7684;&#x6A21;&#x5757;&#x540D;&#x79F0;&#x7A7A;&#x95F4;&#xFF08;&#x5B9E;&#x9645;&#x4E0A;&#x53EA;&#x662F;Lua&#x8868;&#xFF09;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x3002; &#x67E5;&#x770B;vs2010_vcxproj.lua&#x7684;&#x9876;&#x90E8;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> p = premake
+<span class="hljs-keyword">local</span> m = p.vstudio.vc2010
+</code></pre>
+<p>&#x6269;&#x5C55;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x63A8;&#x65AD;&#x51FA;&#x6211;&#x4EEC;&#x8981;&#x8986;&#x76D6;&#x7684;&#x51FD;&#x6570;&#x7684;&#x6807;&#x51C6;&#x540D;&#x79F0;&#x662F;premake.vstudio.vc2010.project&#xFF08;&#xFF09;&#x3002;</p>
+<h3 id="&#x5F15;&#x5165;&#x8986;&#x76D6;">&#x5F15;&#x5165;&#x8986;&#x76D6;</h3>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x786E;&#x5B9A;&#x4E86;&#x53D1;&#x51FA;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x66F4;&#x6539;&#x7684;&#x6807;&#x8BB0;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Premake&#x7684;&#x6070;&#x5F53;&#x547D;&#x540D;&#x7684;override&#xFF08;&#xFF09;&#x51FD;&#x6570;&#x6765;&#x8986;&#x76D6;&#x5B83;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x52A8;&#x4F5C;&#x4E4B;&#x524D;&#xFF0C;&#x5B83;&#x4EEC;&#x624D;&#x4F1A;&#x88AB;&#x62C9;&#x8FDB;&#x53BB;&#xFF0C;&#x56E0;&#x6B64;&#x60A8;&#x9700;&#x8981;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x624D;&#x80FD;&#x8BBF;&#x95EE;&#x5B83;</p>
+<pre><code class="lang-lua"><span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;vstudio&apos;</span>)
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF08;&#x53EA;&#x6709;&#x8FD9;&#x6837;&#xFF09;&#xFF0C;&#x60A8;&#x624D;&#x80FD;&#x7EE7;&#x7EED;&#x8C03;&#x7528;&#x8986;&#x76D6;&#x51FD;&#x6570;&#xFF01;</p>
+<pre><code class="lang-lua">premake.override(premake.vstudio.vc2010, <span class="hljs-string">&quot;project&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(base, prj)</span></span>
+    premake.w(<span class="hljs-string">&apos;&lt;!-- Generated by Premake &apos;</span> .. _PREMAKE_VERSION .. <span class="hljs-string">&apos; --&gt;&apos;</span>)
+    base(prj)
+<span class="hljs-keyword">end</span>)
+</code></pre>
+<p>&#x6B64;&#x4EE3;&#x7801;&#x6BB5;&#x7528;&#x6211;&#x7684;&#x65B0;&#xFF08;&#x533F;&#x540D;&#xFF09;&#x51FD;&#x6570;&#x66FF;&#x6362;&#x4E86;m.project&#xFF08;&#xFF09;&#x7684;&#x539F;&#x59CB;&#x5B9E;&#x73B0;&#x3002; &#x4ECE;&#x8FD9;&#x4E00;&#x70B9;&#x5F00;&#x59CB;&#xFF0C;&#x5F53;&#x6709;&#x4EBA;&#x8C03;&#x7528;m.project&#xFF08;&#xFF09;&#x65F6;&#xFF0C;Premake&#x5C06;&#x8C03;&#x7528;&#x6211;&#x7684;&#x65B0;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x5C06;&#x539F;&#x59CB;&#x5B9E;&#x73B0;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF08;&#x57FA;&#x7840;&#xFF09;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x3002; &#x5982;&#x679C;&#x8BE5;&#x51FD;&#x6570;&#x9700;&#x8981;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#xFF08;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x63A5;&#x6536;&#x5230;&#x8981;&#x5BFC;&#x51FA;&#x4E3A;prj&#x7684;&#x9879;&#x76EE;&#xFF09;&#xFF0C;&#x5B83;&#x4EEC;&#x5C06;&#x51FA;&#x73B0;&#x5728;&#x540E;&#x9762;&#x3002;</p>
+<p>&#x5728;&#x66FF;&#x6362;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;premake.w&#xFF08;&#xFF09;&#xFF08;&#x5B83;&#x662F;&#x201C; premake write&#x201D;&#x7684;&#x7F29;&#x5199;&#xFF09;&#x548C;_PREMAKE_VERSION&#x53D1;&#x51FA;&#x7684;&#x6CE8;&#x91CA;&#x6807;&#x5934;&#xFF0C;_PREMAKE_VERSION&#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x5F53;&#x524D;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;Premake&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+<p>&#x53D1;&#x51FA;&#x8BC4;&#x8BBA;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8C03;&#x7528;m.project&#xFF08;&#xFF09;&#x7684;&#x539F;&#x59CB;&#x5B9E;&#x73B0;base&#xFF08;prj&#xFF09;&#xFF0C;&#x4E3A;&#x6211;&#x4EEC;&#x5B8C;&#x6210;&#x5176;&#x4F59;&#x5DE5;&#x4F5C;&#x3002; &#x7B80;&#x5355;&#x7684;&#xFF01;</p>
+<p>&#x8981;&#x542F;&#x7528;&#x6211;&#x4EEC;&#x7684;&#x8986;&#x76D6;&#xFF0C;&#x8BF7;&#x5C06;&#x8BE5;&#x4EE3;&#x7801;&#x653E;&#x7F6E;&#x5728;&#x9879;&#x76EE;&#x6216;&#x7CFB;&#x7EDF;&#x811A;&#x672C;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x4F4D;&#x7F6E;&#x3002; &#x4E5F;&#x8BB8;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code class="lang-lua">workspace <span class="hljs-string">&quot;MyWorkspace&quot;</span>
+   configurations { <span class="hljs-string">&quot;Debug&quot;</span>, <span class="hljs-string">&quot;Release&quot;</span> }
+
+project <span class="hljs-string">&quot;MyProject&quot;</span>
+   kind <span class="hljs-string">&quot;ConsoleApp&quot;</span>
+   <span class="hljs-comment">-- ... the rest of the project settings...</span>
+
+<span class="hljs-comment">-- Write the current Premake version into our generated files, for reference</span>
+premake.override(premake.vstudio.vc2010, <span class="hljs-string">&quot;project&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(base, prj)</span></span>
+    premake.w(<span class="hljs-string">&apos;&lt;!-- Generated by Premake &apos;</span> .. _PREMAKE_VERSION .. <span class="hljs-string">&apos; --&gt;&apos;</span>)
+    base(prj)
+<span class="hljs-keyword">end</span>)
+</code></pre>
+<p>&#x4E0B;&#x6B21;&#x60A8;&#x4ECE;&#x811A;&#x672C;&#x751F;&#x6210;Visual Studio&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x6CE8;&#x91CA;&#x6807;&#x9898;&#x5C06;&#x653E;&#x7F6E;&#x5728;Project&#x5143;&#x7D20;&#x4E4B;&#x524D;&#x3002;</p>
+<h3 id="&#x8C03;&#x7528;&#x6570;&#x7EC4;&#x7B80;&#x4ECB;">&#x8C03;&#x7528;&#x6570;&#x7EC4;&#x7B80;&#x4ECB;</h3>
+<p>&#x8986;&#x76D6;&#x662F;&#x62E6;&#x622A;&#x73B0;&#x6709;&#x8C03;&#x7528;&#x4EE5;&#x4FEE;&#x6539;&#x5176;&#x53C2;&#x6570;&#x6216;&#x8FD4;&#x56DE;&#x503C;&#x751A;&#x81F3;&#x5B8C;&#x5168;&#x66FF;&#x6362;&#x5B83;&#x7684;&#x4E00;&#x79CD;&#x597D;&#x65B9;&#x6CD5;&#x3002; &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;Premake&#x7684;&#x8C03;&#x7528;&#x6570;&#x7EC4;&#x7EA6;&#x5B9A;&#x6765;&#x5B9E;&#x73B0;&#x5B9A;&#x5236;&#xFF0C;&#x8FD9;&#x662F;&#x53E6;&#x4E00;&#x79CD;&#x66F4;&#x72EC;&#x7ACB;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x67E5;&#x770B;vs2010_vcxproj.lua&#x7684;&#x9876;&#x90E8;&#xFF0C;&#x60A8;&#x4F1A;&#x770B;&#x5230;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x5F15;&#x7528;&#x6570;&#x7EC4;&#x8C03;&#x7528;&#x4E86;m.project&#xFF08;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-lua">m.elements.project = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(prj)</span></span>
+    <span class="hljs-keyword">return</span> {
+        m.xmlDeclaration,
+        m.project,
+        m.projectConfigurations,
+        m.globals,
+        m.importDefaultProps,
+        m.configurationPropertiesGroup,
+        m.importExtensionSettings,
+        m.propertySheetGroup,
+        m.userMacros,
+        m.outputPropertiesGroup,
+        m.itemDefinitionGroups,
+        m.assemblyReferences,
+        m.files,
+        m.projectReferences,
+        m.importExtensionTargets,
+    }
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">m.generate</span><span class="hljs-params">(prj)</span></span>
+    <span class="hljs-built_in">io</span>.utf8()
+    p.callArray(m.elements.project, prj)
+    p.out(<span class="hljs-string">&apos;&lt;/Project&gt;&apos;</span>)
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>Premake&#x8C03;&#x7528;m.generate&#xFF08;&#xFF09;&#x5BFC;&#x51FA;&#x9879;&#x76EE;&#xFF0C;&#x7A0D;&#x540E;&#x518D;&#x8BA8;&#x8BBA;&#x3002; m.generate&#xFF08;&#xFF09;&#x8C03;&#x7528;p.callArray&#xFF08;&#xFF09;&#xFF08;&#x8BB0;&#x4F4F;p&#x662F;premake&#x7684;&#x522B;&#x540D;&#xFF09;&#xFF0C;&#x5B83;&#x5C06;&#x8C03;&#x7528;m.elements.project&#xFF08;&#xFF09;&#x8FD4;&#x56DE;&#x7684;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4F20;&#x9012;&#x63D0;&#x4F9B;&#x7684;&#x53C2;&#x6570;&#xFF08;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#x4E3A;prj&#xFF09; &#x7ED9;&#x4ED6;&#x4EEC;&#x6BCF;&#x4E2A;&#x4EBA;&#x3002; &#x8FD9;&#x79CD;&#x95F4;&#x63A5;&#x65B9;&#x5F0F;&#x4F7F;&#x50CF;&#x60A8;&#x4E00;&#x6837;&#x7684;&#x9879;&#x76EE;&#x811A;&#x672C;&#x4F5C;&#x8005;&#x6709;&#x673A;&#x4F1A;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#xFF0C;&#x5220;&#x9664;&#x6216;&#x91CD;&#x65B0;&#x6392;&#x5E8F;&#x5217;&#x8868;&#x6765;&#x4FEE;&#x6539;&#x8BE5;&#x8C03;&#x7528;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x5C06;&#x7248;&#x672C;&#x6CE8;&#x91CA;&#x5B9E;&#x73B0;&#x4E3A;&#x5BF9;&#x6B64;&#x7279;&#x5B9A;&#x8C03;&#x7528;&#x6570;&#x7EC4;&#x7684;&#x8865;&#x5145;&#x3002; &#x4E3A;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8986;&#x76D6;m.elements.project&#xFF08;&#xFF09;&#x51FD;&#x6570;&#xFF08;&#x4ECE;&#x524D;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#x8BB0;&#x4F4F;&#xFF0C;m&#x662F;premake.vstudio.vc2010&#x7684;&#x7F29;&#x5199;&#xFF09;&#x3002; &#x6211;&#x4EEC;&#x5C06;&#x8C03;&#x7528;&#x539F;&#x59CB;&#x5B9E;&#x73B0;&#x4EE5;&#x83B7;&#x53D6;&#x8C03;&#x7528;&#x6570;&#x7EC4;&#xFF0C;&#x7136;&#x540E;&#x6DFB;&#x52A0;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5176;&#x8FD4;&#x56DE;&#x7ED9;m.generate&#xFF08;&#xFF09;&#x3002;</p>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">premakeVersionComment</span><span class="hljs-params">(prj)</span></span>
+    premake.w(<span class="hljs-string">&apos;&lt;!-- Generated by Premake &apos;</span> .. _PREMAKE_VERSION .. <span class="hljs-string">&apos; --&gt;&apos;</span>)
+<span class="hljs-keyword">end</span>
+
+premake.override(premake.vstudio.vc2010.elements, <span class="hljs-string">&quot;project&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(base, prj)</span></span>
+    <span class="hljs-keyword">local</span> calls = base(prj)
+    <span class="hljs-built_in">table</span>.insertafter(calls, m.xmlDeclaration, premakeVersionComment)
+    <span class="hljs-keyword">return</span> calls
+<span class="hljs-keyword">end</span>)
+</code></pre>
+<p>&#x5982;&#x679C;&#x60A8;&#x5C06;&#x8BE5;&#x4EE3;&#x7801;&#x6BB5;&#x6DFB;&#x52A0;&#x5230;&#x9879;&#x76EE;&#x6216;&#x7CFB;&#x7EDF;&#x811A;&#x672C;&#x4E2D;&#xFF0C;&#x5219;&#x5C06;&#x5728;m.xmlDeclaration&#xFF08;&#xFF09;&#x548C;m.project&#xFF08;&#xFF09;&#x4E4B;&#x95F4;&#x8C03;&#x7528;&#x65B0;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x5C06;&#x6CE8;&#x91CA;&#x653E;&#x5728;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="coding-conventions.html" class="navigation navigation-prev " aria-label="Previous page: 编码约定">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="developing-modules.html" class="navigation navigation-next " aria-label="Next page: 开发模块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"覆盖和调用数组","level":"1.4.4","depth":2,"next":{"title":"开发模块","level":"1.4.5","depth":2,"path":"extending-premake/developing-modules.md","ref":"extending-premake/developing-modules.md","articles":[]},"previous":{"title":"编码约定","level":"1.4.3","depth":2,"path":"extending-premake/coding-conventions.md","ref":"extending-premake/coding-conventions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"extending-premake/overrides-and-call-arrays.md","mtime":"2021-05-15T09:06:12.542Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-15T12:05:03.929Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

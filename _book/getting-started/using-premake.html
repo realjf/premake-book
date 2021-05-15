@@ -1,0 +1,606 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>使用premake · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="building-premake.html" />
+    
+    
+    <link rel="prev" href="what-is-premake.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="home.html">
+            
+                <a href="home.html">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="what-is-premake.html">
+            
+                <a href="what-is-premake.html">
+            
+                    
+                    什么是premake?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="using-premake.html">
+            
+                <a href="using-premake.html">
+            
+                    
+                    使用premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="building-premake.html">
+            
+                <a href="building-premake.html">
+            
+                    
+                    构建premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    编写premake脚本
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../writing-premake-scripts/your-first-script.html">
+            
+                <a href="../writing-premake-scripts/your-first-script.html">
+            
+                    
+                    你的第一个脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../writing-premake-scripts/workspaces-and-projects.html">
+            
+                <a href="../writing-premake-scripts/workspaces-and-projects.html">
+            
+                    
+                    工作区和项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../writing-premake-scripts/scopes-and-inheritance.html">
+            
+                <a href="../writing-premake-scripts/scopes-and-inheritance.html">
+            
+                    
+                    范围和继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../writing-premake-scripts/adding-source-files.html">
+            
+                <a href="../writing-premake-scripts/adding-source-files.html">
+            
+                    
+                    添加源文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../writing-premake-scripts/linking.html">
+            
+                <a href="../writing-premake-scripts/linking.html">
+            
+                    
+                    链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../writing-premake-scripts/configurations-and-platforms.html">
+            
+                <a href="../writing-premake-scripts/configurations-and-platforms.html">
+            
+                    
+                    配置和平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../writing-premake-scripts/filters.html">
+            
+                <a href="../writing-premake-scripts/filters.html">
+            
+                    
+                    过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../writing-premake-scripts/build-settings.html">
+            
+                <a href="../writing-premake-scripts/build-settings.html">
+            
+                    
+                    构建设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../writing-premake-scripts/command-line-arguments.html">
+            
+                <a href="../writing-premake-scripts/command-line-arguments.html">
+            
+                    
+                    命令行参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../writing-premake-scripts/using-modules.html">
+            
+                <a href="../writing-premake-scripts/using-modules.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../writing-premake-scripts/more-authoring-topics.html">
+            
+                <a href="../writing-premake-scripts/more-authoring-topics.html">
+            
+                    
+                    更多创作主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    扩展premake
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../guides/sharing-configuration-settings.html">
+            
+                <a href="../guides/sharing-configuration-settings.html">
+            
+                    
+                    分享配置设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >使用premake</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4F7F;&#x7528;-premake">&#x4F7F;&#x7528; premake</h2>
+<p>&#x662F;Premake&#x7684;&#x65B0;&#x624B;&#x5417;&#xFF1F;&#x60A8;&#x53EF;&#x80FD;&#x60F3;&#x4ECE;&#x4EC0;&#x4E48;&#x662F;Premake&#x5F00;&#x59CB;&#xFF1F;</p>
+<p>&#x5982;&#x679C;&#x5C1A;&#x672A;&#x5B89;&#x88C5;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x5904;&#x4E0B;&#x8F7D;Premake&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4ECE;&#x6E90;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x6784;&#x5EFA;&#x3002; Premake&#x662F;&#x4E00;&#x4E2A;&#x5C0F;&#x578B;&#x547D;&#x4EE4;&#x884C;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#xFF0C;&#x4EE5;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#x5F62;&#x5F0F;&#x63D0;&#x4F9B;&#x3002;&#x53EA;&#x9700;&#x89E3;&#x538B;&#x7F29;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x653E;&#x5728;&#x7CFB;&#x7EDF;&#x641C;&#x7D22;&#x8DEF;&#x5F84;&#x6216;&#x5176;&#x4ED6;&#x65B9;&#x4FBF;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;premake&#x751F;&#x6210;&#x9879;&#x76EE;&#x6587;&#x4EF6;">&#x4F7F;&#x7528;Premake&#x751F;&#x6210;&#x9879;&#x76EE;&#x6587;&#x4EF6;</h3>
+<p>&#x6700;&#x7B80;&#x5355;&#x7684;Premake&#x547D;&#x4EE4;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-sh">premake5 [action]
+</code></pre>
+<p>Premake&#x5F00;&#x7BB1;&#x5373;&#x7528;&#x5730;&#x5B9A;&#x4E49;&#x4E86;&#x4EE5;&#x4E0B;&#x52A8;&#x4F5C;&#x5217;&#x8868;&#xFF1B;&#x9879;&#x76EE;&#x4E5F;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x81EA;&#x5DF1;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vs2019</td>
+<td>&#x751F;&#x6210;Visual Studio 2019&#x9879;&#x76EE;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>vs2017</td>
+<td>&#x751F;&#x6210;Visual Studio 2017&#x9879;&#x76EE;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>vs2015</td>
+<td>&#x751F;&#x6210;Visual Studio 2015&#x9879;&#x76EE;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>vs2013</td>
+<td>&#x751F;&#x6210;Visual Studio 2013&#x9879;&#x76EE;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>vs2012</td>
+<td>&#x751F;&#x6210;Visual Studio 2012&#x9879;&#x76EE;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>vs2010</td>
+<td>&#x751F;&#x6210;Visual Studio 2010&#x9879;&#x76EE;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>vs2008</td>
+<td>&#x751F;&#x6210;Visual Studio 2008&#x9879;&#x76EE;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>vs2005</td>
+<td>&#x751F;&#x6210;Visual Studio 2005&#x9879;&#x76EE;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>gmake</td>
+<td>&#x751F;&#x6210;GNU Makefile&#xFF08;&#x6B64;&#x751F;&#x6210;&#x5668;&#x5DF2;&#x88AB;gmake2&#x5F03;&#x7528;&#xFF09;</td>
+</tr>
+<tr>
+<td>gmake2</td>
+<td>&#x751F;&#x6210;GNU Makefile&#xFF08;&#x5305;&#x62EC;Cygwin&#x548C;MinGW&#xFF09;</td>
+</tr>
+<tr>
+<td>xcode4</td>
+<td>XCode&#x9879;&#x76EE;</td>
+</tr>
+<tr>
+<td>codelite</td>
+<td>CodeLite&#x9879;&#x76EE;</td>
+</tr>
+</tbody>
+</table>
+<p>Premake4&#x652F;&#x6301;&#x5C1A;&#x672A;&#x79FB;&#x690D;&#x5230;&#x6B64;&#x65B0;&#x7248;&#x672C;&#x7684;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#xFF1B;&#x6709;&#x5173;&#x6574;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#x201C;&#x53EF;&#x7528;&#x529F;&#x80FD;&#x5217;&#x8868;&#x201D;&#x3002;</p>
+<p>&#x8981;&#x751F;&#x6210;Visual Studio 2013&#x9879;&#x76EE;&#x6587;&#x4EF6;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-shell">premake5 vs2013
+</code></pre>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x9879;&#x76EE;&#x652F;&#x6301;&#x7684;&#x64CD;&#x4F5C;&#x548C;&#x5176;&#x4ED6;&#x9009;&#x9879;&#x7684;&#x5B8C;&#x6574;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code>premake5 --help
+</code></pre><h3 id="&#x4F7F;&#x7528;&#x751F;&#x6210;&#x7684;&#x9879;&#x76EE;">&#x4F7F;&#x7528;&#x751F;&#x6210;&#x7684;&#x9879;&#x76EE;</h3>
+<p>&#x5BF9;&#x4E8E;&#x50CF;Visual Studio&#x548C;Xcode&#x8FD9;&#x6837;&#x7684;&#x5DE5;&#x5177;&#x96C6;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x5C06;&#x751F;&#x6210;&#x7684;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x52A0;&#x8F7D;&#x5230;IDE&#x4E2D;&#x5E76;&#x50CF;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#x8FDB;&#x884C;&#x6784;&#x5EFA;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x751F;&#x6210;&#x4E86;makefile&#xFF0C;&#x5219;&#x4E0D;&#x5E26;&#x9009;&#x9879;&#x8FD0;&#x884C;make&#x5C06;&#x4F7F;&#x7528;&#x9879;&#x76EE;&#x4F5C;&#x8005;&#x8BBE;&#x7F6E;&#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x6765;&#x6784;&#x5EFA;&#x6240;&#x6709;&#x76EE;&#x6807;&#x3002;&#x8981;&#x67E5;&#x770B;&#x53EF;&#x7528;&#x914D;&#x7F6E;&#x5217;&#x8868;&#xFF0C;&#x8BF7;&#x952E;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-sh">make <span class="hljs-built_in">help</span>
+</code></pre>
+<p>&#x8981;&#x6784;&#x5EFA;&#x5176;&#x4ED6;&#x914D;&#x7F6E;&#xFF0C;&#x8BF7;&#x6DFB;&#x52A0;config&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-sh">make config=release
+</code></pre>
+<p>&#x8981;&#x5220;&#x9664;&#x6240;&#x6709;&#x751F;&#x6210;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x548C;&#x4E2D;&#x95F4;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-sh">make clean                 <span class="hljs-comment"># to clean the default target</span>
+make config=release clean  <span class="hljs-comment"># to clean a different target</span>
+</code></pre>
+<p>Premake&#x751F;&#x6210;&#x7684;makefile&#xFF08;&#x5F53;&#x524D;&#xFF09;&#x4E0D;&#x652F;&#x6301;make&#x5B89;&#x88C5;&#x6B65;&#x9AA4;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x9F13;&#x52B1;&#x9879;&#x76EE;&#x6240;&#x6709;&#x8005;&#x5728;&#x5176;Premake&#x811A;&#x672C;&#x4E2D;&#x6DFB;&#x52A0;&#x5B89;&#x88C5;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x5177;&#x6709;&#x5728;&#x4EFB;&#x4F55;&#x5E73;&#x53F0;&#x4E0A;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x5DE5;&#x5177;&#x96C6;&#x7684;&#x4F18;&#x52BF;&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x67E5;&#x770B;&#x5E2E;&#x52A9;&#x6765;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5B89;&#x88C5;&#x64CD;&#x4F5C;&#xFF08;&#x5728;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E2D;&#x8FD0;&#x884C;premake5 --help&#xFF09;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="what-is-premake.html" class="navigation navigation-prev " aria-label="Previous page: 什么是premake?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="building-premake.html" class="navigation navigation-next " aria-label="Next page: 构建premake">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用premake","level":"1.2.3","depth":2,"next":{"title":"构建premake","level":"1.2.4","depth":2,"path":"getting-started/building-premake.md","ref":"getting-started/building-premake.md","articles":[]},"previous":{"title":"什么是premake?","level":"1.2.2","depth":2,"path":"getting-started/what-is-premake.md","ref":"getting-started/what-is-premake.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"getting-started/using-premake.md","mtime":"2021-05-15T02:46:46.512Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-15T05:44:39.897Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -8,7 +8,7 @@ git commit -m "updates"
 git push origin master
 
 gitbook build
-git subtree add --prefix=_book origin gh-pages
+git subtree add --prefix=_book origin gh-pages --squash
 git subtree push --prefix=_book origin gh-pages
 
 echo "done"

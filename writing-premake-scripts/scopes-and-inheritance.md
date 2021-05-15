@@ -21,3 +21,18 @@ project "MyProject"
 
 有时返回并向先前声明的范围添加值可能会有所帮助。您可以按照首先声明的方式进行操作：通过使用相同的名称调用 **workspace** 或 **project**
 
+```lua
+-- declare my workspace
+workspace "MyWorkspace"
+  defines { "WORKSPACE1" }
+
+-- declare a project or two
+project "MyProject"
+  defines { "PROJECT" }
+
+-- re-select my workspace to add more settings, which will be inherited
+-- by all projects in the workspace
+workspace "MyWorkspace"
+  defines { "WORKSPACE2" }  -- value is now { "WORKSPACE1", "WORKSPACE2" }
+```
+

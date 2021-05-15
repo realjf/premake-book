@@ -1,13 +1,11 @@
 @echo off 
 
-
 rmdir /s /Q _book
-
 gitbook build
 git worktree prune
 
 rem checking out gh-pages branch into public
-git worktree add -B gh-pages public origin/gh-pages
+git worktree add -B gh-pages _book origin/gh-pages
 cd _book
 git add --all
 git commit -m "update"

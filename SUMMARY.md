@@ -20,12 +20,12 @@
   - [使用模块](writing-premake-scripts/using-modules.md)
   - [更多创作主题](writing-premake-scripts/more-authoring-topics.md)
 - 扩展premake
-  	* [扩展premake](extending-premake/extending-premake.md)
-  	* [代码概述](extending-premake/code-overview.md)
-  	* [编码约定](extending-premake/coding-conventions.md)
-  	* [覆盖和调用数组](extending-premake/overrides-and-call-arrays.md)
-  	* [开发模块](extending-premake/developing-modules.md)
-  	* [添加新action](extending-premake/adding-a-new-action.md)
+  	- [扩展premake](extending-premake/extending-premake.md)
+  	- [代码概述](extending-premake/code-overview.md)
+  	- [编码约定](extending-premake/coding-conventions.md)
+  	- [覆盖和调用数组](extending-premake/overrides-and-call-arrays.md)
+  	- [开发模块](extending-premake/developing-modules.md)
+  	- [添加新action](extending-premake/adding-a-new-action.md)
 - 指南
-   * [分享配置设置](guides/sharing-configuration-settings.md)
+   - [分享配置设置](guides/sharing-configuration-settings.md)
 - 参考

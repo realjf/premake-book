@@ -6,7 +6,7 @@ git pull
 git add -A
 git commit -m "updates"
 git push origin master
-rmdir /s /Q _book
-gitbook build
+
+git subtree push --prefix=_book origin gh-pages
 
 echo "done"

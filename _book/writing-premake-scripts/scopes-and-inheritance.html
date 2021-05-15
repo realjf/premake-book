@@ -1,0 +1,651 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>范围和继承 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="adding-source-files.html" />
+    
+    
+    <link rel="prev" href="workspaces-and-projects.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../getting-started/home.html">
+            
+                <a href="../getting-started/home.html">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../getting-started/what-is-premake.html">
+            
+                <a href="../getting-started/what-is-premake.html">
+            
+                    
+                    什么是premake?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../getting-started/using-premake.html">
+            
+                <a href="../getting-started/using-premake.html">
+            
+                    
+                    使用premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../getting-started/building-premake.html">
+            
+                <a href="../getting-started/building-premake.html">
+            
+                    
+                    构建premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    编写premake脚本
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="your-first-script.html">
+            
+                <a href="your-first-script.html">
+            
+                    
+                    你的第一个脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="workspaces-and-projects.html">
+            
+                <a href="workspaces-and-projects.html">
+            
+                    
+                    工作区和项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="scopes-and-inheritance.html">
+            
+                <a href="scopes-and-inheritance.html">
+            
+                    
+                    范围和继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="adding-source-files.html">
+            
+                <a href="adding-source-files.html">
+            
+                    
+                    添加源文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="linking.html">
+            
+                <a href="linking.html">
+            
+                    
+                    链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="configurations-and-platforms.html">
+            
+                <a href="configurations-and-platforms.html">
+            
+                    
+                    配置和平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="filters.html">
+            
+                <a href="filters.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="build-settings.html">
+            
+                <a href="build-settings.html">
+            
+                    
+                    构建设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="command-line-arguments.html">
+            
+                <a href="command-line-arguments.html">
+            
+                    
+                    命令行参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="using-modules.html">
+            
+                <a href="using-modules.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="more-authoring-topics.html">
+            
+                <a href="more-authoring-topics.html">
+            
+                    
+                    更多创作主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    扩展premake
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../extending-premake/extending-premake.html">
+            
+                <a href="../extending-premake/extending-premake.html">
+            
+                    
+                    扩展premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../extending-premake/code-overview.html">
+            
+                <a href="../extending-premake/code-overview.html">
+            
+                    
+                    代码概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../extending-premake/coding-conventions.html">
+            
+                <a href="../extending-premake/coding-conventions.html">
+            
+                    
+                    编码约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../extending-premake/overrides-and-call-arrays.html">
+            
+                <a href="../extending-premake/overrides-and-call-arrays.html">
+            
+                    
+                    覆盖和调用数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../extending-premake/developing-modules.html">
+            
+                <a href="../extending-premake/developing-modules.html">
+            
+                    
+                    开发模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../extending-premake/adding-a-new-action.html">
+            
+                <a href="../extending-premake/adding-a-new-action.html">
+            
+                    
+                    添加新action
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../guides/sharing-configuration-settings.html">
+            
+                <a href="../guides/sharing-configuration-settings.html">
+            
+                    
+                    分享配置设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >范围和继承</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x8303;&#x56F4;&#x548C;&#x7EE7;&#x627F;">&#x8303;&#x56F4;&#x548C;&#x7EE7;&#x627F;</h2>
+<p>&#x4ECE;&#x524D;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#x60A8;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x6CE8;&#x610F;&#x5230;&#xFF0C;Premake&#x4F7F;&#x7528;&#x4F2A;&#x58F0;&#x660E;&#x6027;&#x8BED;&#x6CD5;&#x6765;&#x6307;&#x5B9A;&#x9879;&#x76EE;&#x4FE1;&#x606F;&#x3002;&#x60A8;&#x4E3A;&#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x4F5C;&#x7528;&#x57DF;&#xFF08;&#x5373;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x6216;&#x9879;&#x76EE;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8BBE;&#x7F6E;&#x653E;&#x7F6E;&#x5728;&#x8BE5;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x3002;</p>
+<p>&#x8303;&#x56F4;&#x5177;&#x6709;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#xFF1A;&#x5305;&#x542B;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x5168;&#x5C40;&#x8303;&#x56F4;&#xFF0C;&#x800C;&#x5DE5;&#x4F5C;&#x533A;&#x53C8;&#x5305;&#x542B;&#x9879;&#x76EE;&#x3002; &#x653E;&#x5165;&#x5916;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x503C;&#x7531;&#x5185;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#x7EE7;&#x627F;&#xFF0C;&#x56E0;&#x6B64;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x7EE7;&#x627F;&#x4E86;&#x5B58;&#x50A8;&#x5728;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x9879;&#x76EE;&#x7EE7;&#x627F;&#x4E86;&#x5B58;&#x50A8;&#x5728;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x503C;&#x3002;</p>
+<pre><code class="lang-lua"><span class="hljs-comment">-- global scope, all workspaces will receive these values</span>
+defines { <span class="hljs-string">&quot;GLOBAL&quot;</span> }
+
+workspace <span class="hljs-string">&quot;MyWorkspaces&quot;</span>
+  <span class="hljs-comment">-- workspace scope inherits the global scope; the list value</span>
+  <span class="hljs-comment">-- will now be { &quot;GLOBAL&quot;, &quot;WORKSPACE&quot; }</span>
+  defines { <span class="hljs-string">&quot;WORKSPACE&quot;</span> }
+
+project <span class="hljs-string">&quot;MyProject&quot;</span>
+  <span class="hljs-comment">-- project scope inherits from its workspace; the list value</span>
+  <span class="hljs-comment">-- will now be { &quot;GLOBAL&quot;, &quot;WORKSPACE&quot;, &quot;PROJECT&quot; }</span>
+  defines { <span class="hljs-string">&quot;PROJECT&quot;</span> }
+</code></pre>
+<p>&#x6709;&#x65F6;&#x8FD4;&#x56DE;&#x5E76;&#x5411;&#x5148;&#x524D;&#x58F0;&#x660E;&#x7684;&#x8303;&#x56F4;&#x6DFB;&#x52A0;&#x503C;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x6240;&#x5E2E;&#x52A9;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x9996;&#x5148;&#x58F0;&#x660E;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF1A;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x540D;&#x79F0;&#x8C03;&#x7528; <strong>workspace</strong> &#x6216; <strong>project</strong></p>
+<pre><code class="lang-lua"><span class="hljs-comment">-- declare my workspace</span>
+workspace <span class="hljs-string">&quot;MyWorkspace&quot;</span>
+  defines { <span class="hljs-string">&quot;WORKSPACE1&quot;</span> }
+
+<span class="hljs-comment">-- declare a project or two</span>
+project <span class="hljs-string">&quot;MyProject&quot;</span>
+  defines { <span class="hljs-string">&quot;PROJECT&quot;</span> }
+
+<span class="hljs-comment">-- re-select my workspace to add more settings, which will be inherited</span>
+<span class="hljs-comment">-- by all projects in the workspace</span>
+workspace <span class="hljs-string">&quot;MyWorkspace&quot;</span>
+  defines { <span class="hljs-string">&quot;WORKSPACE2&quot;</span> }  <span class="hljs-comment">-- value is now { &quot;WORKSPACE1&quot;, &quot;WORKSPACE2&quot; }</span>
+</code></pre>
+<p>&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x201C; *&#x201D;&#x540D;&#x79F0;&#x6765;&#x9009;&#x62E9;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x7236;&#x9879;&#x6216;&#x5BB9;&#x5668;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x77E5;&#x9053;&#x5176;&#x540D;&#x79F0;&#x3002;</p>
+<pre><code class="lang-lua"><span class="hljs-comment">-- declare my workspace</span>
+workspace <span class="hljs-string">&quot;MyWorkspace&quot;</span>
+  defines { <span class="hljs-string">&quot;WORKSPACE1&quot;</span> }
+
+<span class="hljs-comment">-- declare a project or two</span>
+project <span class="hljs-string">&quot;MyProject&quot;</span>
+  defines { <span class="hljs-string">&quot;PROJECT&quot;</span> }
+
+<span class="hljs-comment">-- re-select my workspace to add more settings</span>
+project <span class="hljs-string">&quot;*&quot;</span>
+  defines { <span class="hljs-string">&quot;WORKSPACE2&quot;</span> }  <span class="hljs-comment">-- value is now { &quot;WORKSPACE1&quot;, &quot;WORKSPACE2&quot; }</span>
+
+<span class="hljs-comment">-- re-select the global scope</span>
+workspace <span class="hljs-string">&quot;*&quot;</span>
+</code></pre>
+<p>&#x5C06;&#x201C; *&#x201D;&#x89C6;&#x4E3A;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x8868;&#x793A;&#x201C;&#x6211;&#x7684;&#x7236;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x9879;&#x76EE;&#x201D;&#x6216;&#x201C;&#x5168;&#x5C40;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x201D;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="workspaces-and-projects.html" class="navigation navigation-prev " aria-label="Previous page: 工作区和项目">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="adding-source-files.html" class="navigation navigation-next " aria-label="Next page: 添加源文件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"范围和继承","level":"1.3.3","depth":2,"next":{"title":"添加源文件","level":"1.3.4","depth":2,"path":"writing-premake-scripts/adding-source-files.md","ref":"writing-premake-scripts/adding-source-files.md","articles":[]},"previous":{"title":"工作区和项目","level":"1.3.2","depth":2,"path":"writing-premake-scripts/workspaces-and-projects.md","ref":"writing-premake-scripts/workspaces-and-projects.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"writing-premake-scripts/scopes-and-inheritance.md","mtime":"2021-05-15T07:20:46.051Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-15T08:31:48.461Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

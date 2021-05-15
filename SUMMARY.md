@@ -7,25 +7,25 @@
   * [使用premake](getting-started/using-premake.md)
   * [构建premake](getting-started/building-premake.md)
 
-- 编写premake脚本
-  - [你的第一个脚本](writing-premake-scripts/your-first-script.md)
-  - [工作区和项目](writing-premake-scripts/workspaces-and-projects.md)
-  - [范围和继承](writing-premake-scripts/scopes-and-inheritance.md)
-  - [添加源文件](writing-premake-scripts/adding-source-files.md)
-  - [链接](writing-premake-scripts/linking.md)
-  - [配置和平台](writing-premake-scripts/configurations-and-platforms.md)
-  - [过滤器](writing-premake-scripts/filters.md)
-  - [构建设置](writing-premake-scripts/build-settings.md)
-  - [命令行参数](writing-premake-scripts/command-line-arguments.md)
-  - [使用模块](writing-premake-scripts/using-modules.md)
-  - [更多创作主题](writing-premake-scripts/more-authoring-topics.md)
-- 扩展premake
-  	- [扩展premake](extending-premake/extending-premake.md)
-  	- [代码概述](extending-premake/code-overview.md)
-  	- [编码约定](extending-premake/coding-conventions.md)
-  	- [覆盖和调用数组](extending-premake/overrides-and-call-arrays.md)
-  	- [开发模块](extending-premake/developing-modules.md)
-  	- [添加新action](extending-premake/adding-a-new-action.md)
-- 指南
-   - [分享配置设置](guides/sharing-configuration-settings.md)
-- 参考
+* 编写premake脚本
+  * [你的第一个脚本](writing-premake-scripts/your-first-script.md)
+  * [工作区和项目](writing-premake-scripts/workspaces-and-projects.md)
+  * [范围和继承](writing-premake-scripts/scopes-and-inheritance.md)
+  * [添加源文件](writing-premake-scripts/adding-source-files.md)
+  * [链接](writing-premake-scripts/linking.md)
+  * [配置和平台](writing-premake-scripts/configurations-and-platforms.md)
+  * [过滤器](writing-premake-scripts/filters.md)
+  * [构建设置](writing-premake-scripts/build-settings.md)
+  * [命令行参数](writing-premake-scripts/command-line-arguments.md)
+  * [使用模块](writing-premake-scripts/using-modules.md)
+  * [更多创作主题](writing-premake-scripts/more-authoring-topics.md)
+* 扩展premake
+  * [扩展premake](extending-premake/extending-premake.md)
+  * [代码概述](extending-premake/code-overview.md)
+  * [编码约定](extending-premake/coding-conventions.md)
+  * [覆盖和调用数组](extending-premake/overrides-and-call-arrays.md)
+  * [开发模块](extending-premake/developing-modules.md)
+  * [添加新action](extending-premake/adding-a-new-action.md)
+* 指南
+  * [分享配置设置](guides/sharing-configuration-settings.md)
+* 参考

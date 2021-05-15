@@ -1,0 +1,627 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>命令行参数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="using-modules.html" />
+    
+    
+    <link rel="prev" href="build-settings.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../getting-started/home.html">
+            
+                <a href="../getting-started/home.html">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../getting-started/what-is-premake.html">
+            
+                <a href="../getting-started/what-is-premake.html">
+            
+                    
+                    什么是premake?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../getting-started/using-premake.html">
+            
+                <a href="../getting-started/using-premake.html">
+            
+                    
+                    使用premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../getting-started/building-premake.html">
+            
+                <a href="../getting-started/building-premake.html">
+            
+                    
+                    构建premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    编写premake脚本
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="your-first-script.html">
+            
+                <a href="your-first-script.html">
+            
+                    
+                    你的第一个脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="workspaces-and-projects.html">
+            
+                <a href="workspaces-and-projects.html">
+            
+                    
+                    工作区和项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="scopes-and-inheritance.html">
+            
+                <a href="scopes-and-inheritance.html">
+            
+                    
+                    范围和继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="adding-source-files.html">
+            
+                <a href="adding-source-files.html">
+            
+                    
+                    添加源文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="linking.html">
+            
+                <a href="linking.html">
+            
+                    
+                    链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="configurations-and-platforms.html">
+            
+                <a href="configurations-and-platforms.html">
+            
+                    
+                    配置和平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="filters.html">
+            
+                <a href="filters.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="build-settings.html">
+            
+                <a href="build-settings.html">
+            
+                    
+                    构建设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.9" data-path="command-line-arguments.html">
+            
+                <a href="command-line-arguments.html">
+            
+                    
+                    命令行参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="using-modules.html">
+            
+                <a href="using-modules.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="more-authoring-topics.html">
+            
+                <a href="more-authoring-topics.html">
+            
+                    
+                    更多创作主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    扩展premake
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../extending-premake/extending-premake.html">
+            
+                <a href="../extending-premake/extending-premake.html">
+            
+                    
+                    扩展premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../extending-premake/code-overview.html">
+            
+                <a href="../extending-premake/code-overview.html">
+            
+                    
+                    代码概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../extending-premake/coding-conventions.html">
+            
+                <a href="../extending-premake/coding-conventions.html">
+            
+                    
+                    编码约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../extending-premake/overrides-and-call-arrays.html">
+            
+                <a href="../extending-premake/overrides-and-call-arrays.html">
+            
+                    
+                    覆盖和调用数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../extending-premake/developing-modules.html">
+            
+                <a href="../extending-premake/developing-modules.html">
+            
+                    
+                    开发模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../extending-premake/adding-a-new-action.html">
+            
+                <a href="../extending-premake/adding-a-new-action.html">
+            
+                    
+                    添加新action
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../guides/sharing-configuration-settings.html">
+            
+                <a href="../guides/sharing-configuration-settings.html">
+            
+                    
+                    分享配置设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    参考
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >命令行参数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;">&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;</h2>
+<p>Premake&#x63D0;&#x4F9B;&#x4E86;&#x4F7F;&#x7528;newaction&#x548C;newoption&#x51FD;&#x6570;&#x4ECE;&#x9879;&#x76EE;&#x811A;&#x672C;&#x4E2D;&#x5B9A;&#x4E49;&#x548C;&#x5904;&#x7406;&#x65B0;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<h3 id="&#x52A8;&#x4F5C;&#x548C;&#x9009;&#x9879;">&#x52A8;&#x4F5C;&#x548C;&#x9009;&#x9879;</h3>
+<p>Premake&#x53EF;&#x4EE5;&#x8BC6;&#x522B;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#xFF1A;&#x64CD;&#x4F5C;&#x548C;&#x9009;&#x9879;&#x3002;</p>
+<p>&#x52A8;&#x4F5C;&#x6307;&#x793A;Premake&#x5728;&#x4EFB;&#x4F55;&#x7ED9;&#x5B9A;&#x7684;&#x8FD0;&#x884C;&#x4E2D;&#x5E94;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x3002; &#x4F8B;&#x5982;&#xFF0C;vs2013&#x64CD;&#x4F5C;&#x6307;&#x793A;&#x5E94;&#x751F;&#x6210;Visual Studio 2013&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x3002; &#x6E05;&#x9664;&#x64CD;&#x4F5C;&#x5C06;&#x5BFC;&#x81F4;&#x6240;&#x6709;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x88AB;&#x5220;&#x9664;&#x3002; &#x4E00;&#x6B21;&#x53EA;&#x80FD;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x52A8;&#x4F5C;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x64CD;&#x4F5C;&#x7684;&#x884C;&#x4E3A;&#x3002; &#x4F8B;&#x5982;&#xFF0C;dotnet&#x9009;&#x9879;&#x7528;&#x4E8E;&#x66F4;&#x6539;&#x5728;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x7684;.NET&#x7F16;&#x8BD1;&#x5668;&#x96C6;&#x3002; &#x9009;&#x9879;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;--dotnet = mono&#x4E4B;&#x7C7B;&#x7684;&#x503C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;--with-opengl&#x4E4B;&#x7C7B;&#x7684;&#x6807;&#x5FD7;&#x3002;</p>
+<p>&#x5728;&#x811A;&#x672C;&#x4E2D;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<strong>_ACTION</strong> &#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#xFF09;&#x6765;&#x6807;&#x8BC6;&#x5F53;&#x524D;&#x64CD;&#x4F5C;&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <strong>_OPTIONS</strong> &#x8868;&#x68C0;&#x67E5;&#x9009;&#x9879;&#xFF0C;&#x8BE5;&#x8868;&#x5305;&#x542B;&#x952E;/&#x503C;&#x5BF9;&#x5217;&#x8868;&#x3002; &#x952E;&#x662F;&#x9009;&#x9879;&#x6807;&#x8BC6;&#x7B26;&#xFF08;&#x201C; dotnet&#x201D;&#xFF09;&#xFF0C;&#x5B83;&#x5F15;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x503C;&#xFF08;&#x201C; mono&#x201D;&#xFF09;&#x6216;&#x65E0;&#x503C;&#x9009;&#x9879;&#x7684;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code class="lang-lua"><span class="hljs-comment">-- delete a file if the clean action is running</span>
+<span class="hljs-keyword">if</span> _ACTION == <span class="hljs-string">&quot;clean&quot;</span> <span class="hljs-keyword">then</span>
+   <span class="hljs-comment">-- do something</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-comment">-- use an option value in a configuration</span>
+targetdir ( _OPTIONS[<span class="hljs-string">&quot;outdir&quot;</span>] <span class="hljs-keyword">or</span> <span class="hljs-string">&quot;out&quot;</span> )
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x65B0;&#x9009;&#x9879;">&#x521B;&#x5EFA;&#x65B0;&#x9009;&#x9879;</h3>
+<p>&#x4F7F;&#x7528; <strong>newoption</strong> &#x51FD;&#x6570;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x9009;&#x9879;&#xFF0C;&#x5E76;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x63CF;&#x8FF0;&#x8BE5;&#x9009;&#x9879;&#x7684;&#x8868;&#x3002;&#x6700;&#x597D;&#x7528;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x65E8;&#x5728;&#x5F3A;&#x5236;&#x5728;3D&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x4F7F;&#x7528;OpenGL&#x7684;&#x9009;&#x9879;&#x3002;&#x5B83;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6807;&#x5FD7;&#xFF0C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x503C;&#x3002;</p>
+<pre><code class="lang-lua">newoption {
+   trigger = <span class="hljs-string">&quot;with-opengl&quot;</span>,
+   description = <span class="hljs-string">&quot;Force the use of OpenGL for rendering, regardless of platform&quot;</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="build-settings.html" class="navigation navigation-prev " aria-label="Previous page: 构建设置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="using-modules.html" class="navigation navigation-next " aria-label="Next page: 使用模块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"命令行参数","level":"1.3.9","depth":2,"next":{"title":"使用模块","level":"1.3.10","depth":2,"path":"writing-premake-scripts/using-modules.md","ref":"writing-premake-scripts/using-modules.md","articles":[]},"previous":{"title":"构建设置","level":"1.3.8","depth":2,"path":"writing-premake-scripts/build-settings.md","ref":"writing-premake-scripts/build-settings.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"writing-premake-scripts/command-line-arguments.md","mtime":"2021-05-15T08:19:09.783Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-15T08:31:48.461Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

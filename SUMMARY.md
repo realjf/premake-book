@@ -14,7 +14,7 @@
   - [添加源文件](writing-premake-scripts/adding-source-files.md)
   - [链接](writing-premake-scripts/linking.md)
   - [配置和平台](writing-premake-scripts/configurations-and-platforms.md)
-  - [过滤](writing-premake-scripts/filters.md)
+  - [过滤器](writing-premake-scripts/filters.md)
   - [构建设置](writing-premake-scripts/build-settings.md)
   - [命令行参数](writing-premake-scripts/command-line-arguments.md)
   - [使用模块](writing-premake-scripts/using-modules.md)

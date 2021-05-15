@@ -36,3 +36,24 @@ workspace "MyWorkspace"
   defines { "WORKSPACE2" }  -- value is now { "WORKSPACE1", "WORKSPACE2" }
 ```
 
+您也可以通过使用特殊的“ *”名称来选择当前作用域的父项或容器，而不必知道其名称。
+
+```lua
+-- declare my workspace
+workspace "MyWorkspace"
+  defines { "WORKSPACE1" }
+
+-- declare a project or two
+project "MyProject"
+  defines { "PROJECT" }
+
+-- re-select my workspace to add more settings
+project "*"
+  defines { "WORKSPACE2" }  -- value is now { "WORKSPACE1", "WORKSPACE2" }
+
+-- re-select the global scope
+workspace "*"
+```
+
+将“ *”视为通配符，表示“我的父容器中的所有项目”或“全局范围内的所有工作空间”。
+

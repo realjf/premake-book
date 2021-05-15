@@ -27,5 +27,5 @@
   * [开发模块](extending-premake/developing-modules.md)
   * [添加新action](extending-premake/adding-a-new-action.md)
 * 指南
-  * [分享配置设置](guides/sharing-configuration-settings.md)
+  * [共享配置设置](guides/sharing-configuration-settings.md)
 * 参考

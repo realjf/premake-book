@@ -1,0 +1,1414 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>os.getcwd · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../getting-started/home.html">
+            
+                <a href="../../getting-started/home.html">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../getting-started/what-is-premake.html">
+            
+                <a href="../../getting-started/what-is-premake.html">
+            
+                    
+                    什么是premake?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../getting-started/using-premake.html">
+            
+                <a href="../../getting-started/using-premake.html">
+            
+                    
+                    使用premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../getting-started/building-premake.html">
+            
+                <a href="../../getting-started/building-premake.html">
+            
+                    
+                    构建premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    编写premake脚本
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../writing-premake-scripts/your-first-script.html">
+            
+                <a href="../../writing-premake-scripts/your-first-script.html">
+            
+                    
+                    你的第一个脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../writing-premake-scripts/workspaces-and-projects.html">
+            
+                <a href="../../writing-premake-scripts/workspaces-and-projects.html">
+            
+                    
+                    工作区和项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../writing-premake-scripts/scopes-and-inheritance.html">
+            
+                <a href="../../writing-premake-scripts/scopes-and-inheritance.html">
+            
+                    
+                    范围和继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../writing-premake-scripts/adding-source-files.html">
+            
+                <a href="../../writing-premake-scripts/adding-source-files.html">
+            
+                    
+                    添加源文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../writing-premake-scripts/linking.html">
+            
+                <a href="../../writing-premake-scripts/linking.html">
+            
+                    
+                    链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../writing-premake-scripts/configurations-and-platforms.html">
+            
+                <a href="../../writing-premake-scripts/configurations-and-platforms.html">
+            
+                    
+                    配置和平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../writing-premake-scripts/filters.html">
+            
+                <a href="../../writing-premake-scripts/filters.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../writing-premake-scripts/build-settings.html">
+            
+                <a href="../../writing-premake-scripts/build-settings.html">
+            
+                    
+                    构建设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../writing-premake-scripts/command-line-arguments.html">
+            
+                <a href="../../writing-premake-scripts/command-line-arguments.html">
+            
+                    
+                    命令行参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../../writing-premake-scripts/using-modules.html">
+            
+                <a href="../../writing-premake-scripts/using-modules.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../../writing-premake-scripts/precompiled-headers.html">
+            
+                <a href="../../writing-premake-scripts/precompiled-headers.html">
+            
+                    
+                    预编译头
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../../writing-premake-scripts/more-authoring-topics.html">
+            
+                <a href="../../writing-premake-scripts/more-authoring-topics.html">
+            
+                    
+                    更多创作主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    扩展premake
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../extending-premake/extending-premake.html">
+            
+                <a href="../../extending-premake/extending-premake.html">
+            
+                    
+                    扩展premake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../extending-premake/code-overview.html">
+            
+                <a href="../../extending-premake/code-overview.html">
+            
+                    
+                    代码概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../extending-premake/coding-conventions.html">
+            
+                <a href="../../extending-premake/coding-conventions.html">
+            
+                    
+                    编码约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../extending-premake/overrides-and-call-arrays.html">
+            
+                <a href="../../extending-premake/overrides-and-call-arrays.html">
+            
+                    
+                    覆盖和调用数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../extending-premake/developing-modules.html">
+            
+                <a href="../../extending-premake/developing-modules.html">
+            
+                    
+                    开发模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../extending-premake/adding-a-new-action.html">
+            
+                <a href="../../extending-premake/adding-a-new-action.html">
+            
+                    
+                    添加新action
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../guides/sharing-configuration-settings.html">
+            
+                <a href="../../guides/sharing-configuration-settings.html">
+            
+                    
+                    共享配置设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    参考
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    项目设置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../project-settings/architecture.html">
+            
+                <a href="../project-settings/architecture.html">
+            
+                    
+                    architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../project-settings/atl.html">
+            
+                <a href="../project-settings/atl.html">
+            
+                    
+                    atl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../project-settings/basedir.html">
+            
+                <a href="../project-settings/basedir.html">
+            
+                    
+                    basedir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../project-settings/buildoptions.html">
+            
+                <a href="../project-settings/buildoptions.html">
+            
+                    
+                    buildoptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../project-settings/characterset.html">
+            
+                <a href="../project-settings/characterset.html">
+            
+                    
+                    characterset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../project-settings/configurations.html">
+            
+                <a href="../project-settings/configurations.html">
+            
+                    
+                    configurations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../project-settings/cppdialect.html">
+            
+                <a href="../project-settings/cppdialect.html">
+            
+                    
+                    cppdialect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="../project-settings/defines.html">
+            
+                <a href="../project-settings/defines.html">
+            
+                    
+                    defines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="../project-settings/disablewarnings.html">
+            
+                <a href="../project-settings/disablewarnings.html">
+            
+                    
+                    disablewarnings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.10" data-path="../project-settings/editandcontinue.html">
+            
+                <a href="../project-settings/editandcontinue.html">
+            
+                    
+                    editandcontinue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.11" data-path="../project-settings/entrypoint.html">
+            
+                <a href="../project-settings/entrypoint.html">
+            
+                    
+                    entrypoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.12" data-path="../project-settings/filename.html">
+            
+                <a href="../project-settings/filename.html">
+            
+                    
+                    filename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.13" data-path="../project-settings/files.html">
+            
+                <a href="../project-settings/files.html">
+            
+                    
+                    files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.14" data-path="../project-settings/filter.html">
+            
+                <a href="../project-settings/filter.html">
+            
+                    
+                    filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.15" data-path="../project-settings/flags.html">
+            
+                <a href="../project-settings/flags.html">
+            
+                    
+                    flags
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.16" data-path="../project-settings/group.html">
+            
+                <a href="../project-settings/group.html">
+            
+                    
+                    group
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.17" data-path="../project-settings/includedirs.html">
+            
+                <a href="../project-settings/includedirs.html">
+            
+                    
+                    includedirs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.18" data-path="../project-settings/kind.html">
+            
+                <a href="../project-settings/kind.html">
+            
+                    
+                    kind
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.19" data-path="../project-settings/language.html">
+            
+                <a href="../project-settings/language.html">
+            
+                    
+                    language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.20" data-path="../project-settings/libdirs.html">
+            
+                <a href="../project-settings/libdirs.html">
+            
+                    
+                    libdirs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.21" data-path="../project-settings/linkoptions.html">
+            
+                <a href="../project-settings/linkoptions.html">
+            
+                    
+                    linkoptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.22" data-path="../project-settings/links.html">
+            
+                <a href="../project-settings/links.html">
+            
+                    
+                    links
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.23" data-path="../project-settings/location.html">
+            
+                <a href="../project-settings/location.html">
+            
+                    
+                    location
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.24" data-path="../project-settings/newaction.html">
+            
+                <a href="../project-settings/newaction.html">
+            
+                    
+                    newaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.25" data-path="../project-settings/newoption.html">
+            
+                <a href="../project-settings/newoption.html">
+            
+                    
+                    newoption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.26" data-path="../project-settings/objdir.html">
+            
+                <a href="../project-settings/objdir.html">
+            
+                    
+                    objdir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.27" data-path="../project-settings/optimize.html">
+            
+                <a href="../project-settings/optimize.html">
+            
+                    
+                    optimize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.28" data-path="../project-settings/options.html">
+            
+                <a href="../project-settings/options.html">
+            
+                    
+                    options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.29" data-path="../project-settings/pchheader.html">
+            
+                <a href="../project-settings/pchheader.html">
+            
+                    
+                    pchheader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.30" data-path="../project-settings/pchsource.html">
+            
+                <a href="../project-settings/pchsource.html">
+            
+                    
+                    pchsource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.31" data-path="../project-settings/platforms.html">
+            
+                <a href="../project-settings/platforms.html">
+            
+                    
+                    platforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.32" data-path="../project-settings/runtime.html">
+            
+                <a href="../project-settings/runtime.html">
+            
+                    
+                    runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.33" data-path="../project-settings/startproject.html">
+            
+                <a href="../project-settings/startproject.html">
+            
+                    
+                    startproject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.34" data-path="../project-settings/staticruntime.html">
+            
+                <a href="../project-settings/staticruntime.html">
+            
+                    
+                    staticruntime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.35" data-path="../project-settings/symbols.html">
+            
+                <a href="../project-settings/symbols.html">
+            
+                    
+                    symbols
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.36" data-path="../project-settings/sysincludedirs.html">
+            
+                <a href="../project-settings/sysincludedirs.html">
+            
+                    
+                    sysincludedirs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.37" data-path="../project-settings/system.html">
+            
+                <a href="../project-settings/system.html">
+            
+                    
+                    system
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.38" data-path="../project-settings/systemversion.html">
+            
+                <a href="../project-settings/systemversion.html">
+            
+                    
+                    systemversion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.39" data-path="../project-settings/targetdir.html">
+            
+                <a href="../project-settings/targetdir.html">
+            
+                    
+                    targetdir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.40" data-path="../project-settings/targetextension.html">
+            
+                <a href="../project-settings/targetextension.html">
+            
+                    
+                    targetextension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.41" data-path="../project-settings/toolset.html">
+            
+                <a href="../project-settings/toolset.html">
+            
+                    
+                    toolset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.42" data-path="../project-settings/warnings.html">
+            
+                <a href="../project-settings/warnings.html">
+            
+                    
+                    warnings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.43" data-path="../project-settings/workspace.html">
+            
+                <a href="../project-settings/workspace.html">
+            
+                    
+                    workspace
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    全局
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../globals/_options.html">
+            
+                <a href="../globals/_options.html">
+            
+                    
+                    _OPTIONS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../globals/include.html">
+            
+                <a href="../globals/include.html">
+            
+                    
+                    include
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="../globals/printf.html">
+            
+                <a href="../globals/printf.html">
+            
+                    
+                    printf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="../globals/require.html">
+            
+                <a href="../globals/require.html">
+            
+                    
+                    require
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    http
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    io
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    json
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" >
+            
+                <span>
+            
+                    
+                    os
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.6.1" data-path="getcwd.html">
+            
+                <a href="getcwd.html">
+            
+                    
+                    os.getcwd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" >
+            
+                <span>
+            
+                    
+                    path
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" >
+            
+                <span>
+            
+                    
+                    string
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" >
+            
+                <span>
+            
+                    
+                    table
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" >
+            
+                <span>
+            
+                    
+                    term
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" >
+            
+                <span>
+            
+                    
+                    zip
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >os.getcwd</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="osgetcwd">os.getcwd</h2>
+<p>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</p>
+<pre><code class="lang-lua">cwd = <span class="hljs-built_in">os</span>.getcwd()
+</code></pre>
+<h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<p>&#x65E0;</p>
+<h3 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</p>
+<h3 id="&#x53EF;&#x7528;&#x6027;">&#x53EF;&#x7528;&#x6027;</h3>
+<p>premake 4.0 &#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"os.getcwd","level":"1.6.6.1","depth":3,"next":{"title":"path","level":"1.6.7","depth":2,"ref":"","articles":[]},"previous":{"title":"os","level":"1.6.6","depth":2,"ref":"","articles":[{"title":"os.getcwd","level":"1.6.6.1","depth":3,"path":"reference/os/getcwd.md","ref":"reference/os/getcwd.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"reference/os/getcwd.md","mtime":"2021-05-17T02:01:27.821Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-17T06:34:10.777Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
